@@ -4,9 +4,6 @@ Este é o repositório ACR de Ailton. Aqui você encontrará uma variedade de pr
 
 ## Projetos
 
-1. **ProjetoXYZ:** Descrição breve do projeto XYZ.
-2. **ProjetoABC:** Descrição breve do projeto ABC.
-3. **Projeto123:** Descrição breve do projeto 123.
 
 ## Como contribuir
 
@@ -22,6 +19,6 @@ Ficarei feliz em revisar e mesclar as contribuições relevantes!
 
 ## Contato
 
-Se você tiver alguma dúvida ou sugestão sobre qualquer um dos projetos, sinta-se à vontade para entrar em contato comigo através do meu email: ailton@email.com.
+Se você tiver alguma dúvida ou sugestão sobre qualquer um dos projetos, sinta-se à vontade para entrar em contato comigo através do meu email: ailtonrodrigues1324@email.com.
 
 Obrigado por visitar este repositório!
