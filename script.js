@@ -1,0 +1,1 @@
+alert('teste de script.js');
