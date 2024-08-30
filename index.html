@@ -1,93 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-    <title>Contact Form</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f4f4f4;
-        }
-        .container {
-            background-color: white;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-        h1 {
-            text-align: center;
-            color: #333;
-        }
-        label {
-            display: block;
-            margin-bottom: 8px;
-            color: #555;
-        }
-        input[type="text"], input[type="email"], textarea {
-            width: 100%;
-            padding: 0px;
-            margin-bottom: 20px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        input[type="submit"] {
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 4px;
-            cursor: pointer;
-            width: 100%;
-            font-size: 16px;
-        }
-        input[type="submit"]:hover {
-            background-color: #45a049;
-        }
-        .linkedin-button {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: #0077B5;
-            color: white;
-            padding: 10px;
-            border-radius: 4px;
-            text-decoration: none;
-            font-size: 16px;
-            margin-top: 20px;
-        }
-        .linkedin-button:hover {
-            background-color: #005f8a;
-        }
-        .linkedin-button::before {
-            content: "\f08c";
-            font-family: "FontAwesome";
-            margin-right: 8px;
-        }
-    </style>
-    <!-- Link para a biblioteca de ícones FontAwesome -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ailton Rodrigues - Profile</title>
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 <div class="container">
-    <h1>Contact Form</h1>
-    <form action="submit_form.php" method="POST">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+    <div id="theme-toggle" class="theme-toggle">
+        <i class="fa fa-sun-o" id="theme-icon"></i>
+    </div>
+    <img src="images/ailton-photo.jpg" alt="Ailton Rodrigues" class="profile-photo">
+    <div class="info-text">
+        <h1>Ailton Rodrigues</h1>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac vehicula magna.<br>
+            Tecnologias:
+            <a href="https://www.python.org" target="_blank" class="tech-link">
+                <img src="images/python-icon.svg" class="tech-icon" alt="Python" title="Python">
+            </a> Python,
+            <a href="https://www.java.com" target="_blank" class="tech-link">
+                <img src="images/java-icon.svg" class="tech-icon" alt="Java" title="Java">
+            </a> Java,
+            <a href="https://fastapi.tiangolo.com" target="_blank" class="tech-link">
+                <img src="images/fastapi-icon.svg" class="tech-icon" alt="FastAPI" title="FastAPI">
+            </a> FastAPI,
+            <a href="https://spring.io/projects/spring-boot" target="_blank" class="tech-link">
+                <img src="images/springboot-icon.svg" class="tech-icon" alt="Spring Boot" title="Spring Boot">
+            </a> Spring Boot
+        </p>
 
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
+        <h2>Portfólio</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac vehicula magna. Curabitur vitae justo nec libero malesuada consectetur. Vivamus vel sagittis odio. Donec condimentum orci in erat hendrerit, a vulputate orci faucibus.</p>
 
-        <input type="submit" value="Submit">
-    </form>
-    <a class="linkedin-button" href="https://www.linkedin.com/in/ailtonacr" target="_blank">Visit my LinkedIn profile</a>
+        <h2>História</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac vehicula magna. Curabitur vitae justo nec libero malesuada consectetur.</p>
+
+        <h2>Projetos</h2>
+        <ul>
+            <li><a href="https://github.com/ailtonacr/acr" target="_blank">Minha landing page</a></li>
+        </ul>
+    </div>
+
+    <div class="social-links">
+        <a href="https://www.linkedin.com/in/ailtonacr" target="_blank" class="linkedin">
+            <i class="fa fa-linkedin"></i>
+            LinkedIn
+        </a>
+        <a href="https://github.com/ailtonacr" target="_blank" class="github">
+            <i class="fa fa-github"></i>
+            GitHub
+        </a>
+        <a href="https://wa.me/5521966766515" target="_blank" class="whatsapp">
+            <i class="fa fa-whatsapp"></i>
+            WhatsApp
+        </a>
+        <a href="https://www.instagram.com/ailton_acr" target="_blank" class="instagram">
+            <i class="fa fa-instagram"></i>
+            Instagram
+        </a>
+        <a href="mailto:ailtonrodrigues@ailton.dev.br" class="email">
+            <i class="fa fa-envelope"></i>
+            Email
+        </a>
+    </div>
 </div>
+<script src="js/script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>
