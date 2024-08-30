@@ -1,0 +1,186 @@
+/* Configurações de cores para o modo claro e escuro */
+:root {
+    --background-color-light: #f4f4f4;
+    --text-color-light: #333;
+    --container-background-light: #ffffff;
+    --button-background-light: #0077B5;
+    --button-text-color-light: #ffffff;
+
+    --background-color-dark: #2a2a2a;
+    --text-color-dark: #e1e1e1;
+    --container-background-dark: #3a3a3a;
+    --button-background-dark: #0077B5;
+    --button-text-color-dark: #ffffff;
+}
+
+body.light-theme {
+    background-color: var(--background-color-light);
+    color: var(--text-color-light);
+}
+
+body.light-theme .container {
+    background-color: var(--container-background-light);
+}
+
+body.dark-theme {
+    background-color: var(--background-color-dark);
+    color: var(--text-color-dark);
+}
+
+body.dark-theme .container {
+    background-color: var(--container-background-dark);
+}
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+    transition: background-color 0.3s, color 0.3s;
+    min-height: 100vh;
+}
+
+.theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 24px;
+    color: inherit;
+}
+
+body.light-theme .theme-toggle i {
+    color: var(--text-color-light);
+}
+
+body.dark-theme .theme-toggle i {
+    color: var(--text-color-dark);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    border-radius: 1%;
+    position: relative; /* Adiciona contexto para posicionar o botão de alternância */
+}
+
+.profile-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.info-text {
+    color: inherit;
+    text-align: center;
+}
+
+h1, h2 {
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.social-links {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: var(--button-text-color-light);
+    padding: 8px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 16px;
+    width: auto;
+    height: auto;
+    background-color: var(--button-background-light);
+    transition: background-color 0.3s;
+}
+
+.social-links a i {
+    margin-right: 5px;
+    font-size: 16px;
+}
+
+.linkedin {
+    background-color: #0077B5;
+}
+
+.github {
+    background-color: #333;
+}
+
+.whatsapp {
+    background-color: #25D366;
+}
+
+.instagram {
+    /*background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);*/
+    background-color: #25D366
+}
+
+.email {
+    background-color: #D44638;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--background-color-dark);
+        color: var(--text-color-dark);
+    }
+
+    .container {
+        background-color: var(--container-background-dark);
+    }
+
+    .social-links a {
+        color: var(--button-text-color-dark);
+    }
+}
+
+/* Correção dos ícones das tecnologias */
+.tech-icon {
+    width: 15px; /* Ajuste o tamanho do ícone conforme necessário */
+    height: 15px;
+    vertical-align: middle; /* Alinha o ícone verticalmente com o texto */
+    margin-right: 5px; /* Espaçamento entre o ícone e o texto */
+}
+
+.tech-link {
+    text-decoration: none; /* Remove o sublinhado do link */
+    color: inherit; /* Herda a cor do texto do elemento pai */
+}
+
+.tech-link:hover {
+    /* Opcional: adicione um efeito de hover se desejar */
+    opacity: 0.8; /* Por exemplo, diminuir um pouco a opacidade quando o mouse passa sobre o link */
+}
