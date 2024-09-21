@@ -16,11 +16,8 @@ root
 │   ├── script.js             # Arquivo JavaScript para o tema
 │
 └── images
-    ├── ailton-photo.jpg      # Foto do perfil
-    ├── python-icon.svg       # Ícone do Python
-    ├── java-icon.svg         # Ícone do Java
-    ├── fastapi-icon.svg      # Ícone do FastAPI
-    └── springboot-icon.svg   # Ícone do Spring Boot
+    ├── xpto.png              # imagens usads no projeto ficam nesta pasta
+
 ```
 
 ## Tecnologias Usadas
